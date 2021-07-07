@@ -1,0 +1,12 @@
+body{
+    background:  url(vert.jpg) no-repeat fixed center; ;
+}
+
+.container{
+    background-color: rgba(219, 216, 216, 0.781);
+    -webkit-box-shadow: 5px 7px 6px 3px rgba(30,30,30,0.45); 
+    box-shadow: 5px 7px 6px 3px rgba(30,30,30,0.45);
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
