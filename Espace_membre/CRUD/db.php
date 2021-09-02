@@ -5,9 +5,9 @@ ini_set('display_errors', 'On');
 
 define('DB_HOST', 'localhost:3306');
 define('DB_NAME', 'formation_members');
-define('DB_TABLE', 'users'); 
+define('DB_TABLE', 'users');
 define('DB_USER', 'root');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'Canelle1995');
 
 try
 {

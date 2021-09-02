@@ -2,9 +2,9 @@
 session_start();
 
 error_reporting(-1);
-ini_set('display_errors', 'On'); 
+ini_set('display_errors', 'On');
 
-require('bdd.php');
+require('db.php');
 
 if($_POST){
     if(isset($_POST['id']) && !empty($_POST['id']) && isset($_POST['pseudo']) && !empty($_POST['pseudo']) && isset($_POST['email']) && !empty($_POST['email'])){
@@ -70,7 +70,7 @@ else {
                 ?>
                     <div class="alert alert-danger" role="alert"> <?= $_SESSION['erreur'] ?></div>
                     <?= $_SESSION['erreur'] = "" ?>
-                <?php        
+                <?php
                     }
                 ?>
                 <form method="post">

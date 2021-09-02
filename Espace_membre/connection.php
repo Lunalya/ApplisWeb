@@ -12,8 +12,8 @@ require('CRUD/db.php');
 if(!empty($_POST['email']) && !empty($_POST['password'])){
 
 	// VARIABLES
-	$email 		= $_POST['email'];
-	$password 	= $_POST['password'];
+	$email 		= htmlspecialchars($_POST['email']);
+	$password 	= htmlspecialchars($_POST['password']);
 	$error		= 1;
 
 	// CRYPTER LE PASSWORD
@@ -64,7 +64,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 
 
 		<p id="info">Bienvenue sur mon site,si vous n'êtes pas inscrit, <a href="index.php">inscrivez-vous.</a></p>
-	 	
+
 		<?php
 			if(isset($_GET['error'])){
 				echo'<p id="error">Nous ne pouvons pas vous authentifier.</p>';
